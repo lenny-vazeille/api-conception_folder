@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wine App - Conception </title>
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/Kit_UX_UI/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/Kit_UX_UI/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/Kit_UX_UI/favicon-16x16.png">
-    <link rel="manifest" href="./assets/Kit_UX_UI/site.webmanifest">
-    <link rel="mask-icon" href="./assets/Kit_UX_UI/safari-pinned-tab.svg" color="#ad160f">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/Kit_UX_UI/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/Kit_UX_UI/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/Kit_UX_UI/favicon-16x16.png">
+    <link rel="manifest" href="assets/Kit_UX_UI/site.webmanifest">
+    <link rel="mask-icon" href="assets/Kit_UX_UI/safari-pinned-tab.svg" color="#ad160f">
     <meta name="msapplication-TileColor" content="#f2e5bd">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="theme-color" content="#f2e5bd">
@@ -18,9 +18,13 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500;1,900&display=swap');
     </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 
 <body>
+
     <!-- Header -->
     <header>
         <!-- Download pdf -->
@@ -49,76 +53,123 @@
             <span><img src="./assets/Kit_UX_UI/for_use_CG_website/red_small.png" alt="red arrow down"></span>
         </a>
 
+        <a href="./assets/Panel_Utilisateur/Panel_Utilisateur.pdf" download>
+            <h3>Panel Utilisateur</h3>
+            <span><img src="./assets/Kit_UX_UI/for_use_CG_website/red_small.png" alt="red arrow down"></span>
+        </a>
 
+        <a href="./assets/Diagramme_Gantt/Diagramme_Gantt.pdf" download>
+            <h3> Diagramme de Gantt</h3>
+            <span><img src="./assets/Kit_UX_UI/for_use_CG_website/red_small.png" alt="red arrow down"></span>
+        </a>
     </header>
+    <p class="explain">- Veuillez survoler les élèments de la page -</p>
 
     <!-- Content -->
+    <div class="container">
 
-    <section>
-        <div class="WhiteBloc">
-            <h1>wine app</h1>
-            <h2>authenticité</h2>
 
-            <p>
-                &#10112; - Un thème autour du <strong>Rustique - Champêtre - Campagne.</strong>
-                <br> &#10113; - Alliant des teintes <strong>Crème</strong>/Paille - <strong>Terre</strong>/Vignoble -
-                <strong>Vignes</strong>/couleurs.
-                <br>&#10114; - Cibler l'aspect authentique du produit, mise en avant du vin au Naturel.
-            </p>
+        <section>
+            <div class="WhiteBloc" data-aos="zoom-in-right">
+                <h1>wine app</h1>
+                <h2>authenticité</h2>
 
-            <h2>Couleurs</h2>
-            <img src="./assets/Theme/Color/AdobeColor-color theme_280px-Glass_of_Red_Wine_with_a_bottle_of_Red_Wine_-_Evan_Swigart.jpeg" alt="" width="100%" height="300px">
-        </div>
+                <p>
+                    &#10112; - Un thème autour du <strong>Rustique - Champêtre - Campagne.</strong>
+                    <br> &#10113; - Alliant des teintes <strong>Crème</strong>/Paille - <strong>Terre</strong>/Vignoble -
+                    <strong>Vignes</strong>/couleurs.
+                    <br>&#10114; - Cibler l'aspect authentique du produit, mise en avant du vin au Naturel.
+                </p>
 
-        <div class="DarkBloc">
-            <h1>Wine App</h1>
-            <h3>How to use ?</h3><br>
-            <p2> &#10112; Télécharger L'application <br> &#10113; Recherchez une région <br> &#10114; Trouvez le meilleur vin proche de chez vous</p2>
-
-            <p>
-                Lorem ipsum, dolor sit amet consectetur
-                <strong>adipisicing elit.</strong> Nemo ipsam placeat doloribus beatae labore, iusto accusamus voluptatibus officiis ipsa tenetur maxime. Totam id corporis obcaecati
-                <strong>quaerat numquam culpa quod dolor.</strong>
-            </p>
-
-            <!--  iNFORMATIONS CHARTE GRAPHIQUE -->
-            <h3>Charte graphique</h3>
-            <div class="Info">
-                <img src="./assets/Kit_UX_UI/for_use_CG_website/red_medium.png" alt="red arrow down">
-                <ul>
-                    <li><strong>Font family :</strong>
-                        <ol>PlayFair_Display </ol>
-                        <ol>Arial </ol>
-                    </li>
-                    <li><strong>Font size :</strong>
-                        <ol>H1 : 8rem</ol>
-                        <ol>H2 : 4rem</ol>
-                        <ol>H3 : 3rem</ol>
-                        <ol>Pa : 1rem</ol>
-                    </li>
-                </ul>
+                <h2>Couleurs</h2>
+                <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="6000" src="./assets/Theme/Color/AdobeColor-color theme_280px-Glass_of_Red_Wine_with_a_bottle_of_Red_Wine_-_Evan_Swigart.jpeg" alt="" width="100%" height="300px">
             </div>
-        </div>
 
+            <div class="DarkBloc" data-aos="zoom-in-right">
+                <h1>Wine App</h1>
+                <h3>How to use ?</h3><br>
+                <p2> &#10112; Télécharger L'application <br> &#10113; Recherchez une région <br> &#10114; Trouvez le meilleur vin proche de chez vous</p2>
 
-    </section>
+                <p>
+                    Ceci est un paragraphe test : Lorem ipsum, dolor sit amet consectetur
+                    <strong>adipisicing elit.</strong> Nemo ipsam placeat doloribus beatae labore, iusto accusamus voluptatibus officiis ipsa tenetur maxime. Totam id corporis obcaecati
+                    <strong>quaerat numquam culpa quod dolor.</strong>
+                </p>
 
-    <!-- Logo -->
-    <div class="DarkBloc logo_row">
-        <img src="assets\Kit_UX_UI\color\grape512x512-1.png" alt="logo grappe de raisin - logo grappe wine red">
-        <img src="assets\Kit_UX_UI\color\grape512x512-2.png" alt="logo grappe de raisin - logo grappe wine red">
-        <img src="assets\Kit_UX_UI\color\grape512x512-5.png" alt="logo grappe de raisin - logo grappe wine red">
-        <img src="assets\Kit_UX_UI\color\grape512x512-3.png" alt="logo grappe de raisin - logo grappe wine red">
-        <img src="assets\Kit_UX_UI\color\grape512x512-4.png" alt="logo grappe de raisin - logo grappe wine red">
+                <!--  iNFORMATIONS CHARTE GRAPHIQUE -->
+                <h3>Charte graphique</h3>
+                <div class="Info">
+                    <img src="./assets/Kit_UX_UI/for_use_CG_website/red_medium.png" alt="red arrow down">
+                    <ul>
+                        <li><strong>Font family :</strong>
+                            <ol>PlayFair_Display </ol>
+                            <ol>Arial </ol>
+                        </li>
+                        <li><strong>Font size :</strong>
+                            <ol>H1 : 8rem</ol>
+                            <ol>H2 : 4rem</ol>
+                            <ol>H3 : 3rem</ol>
+                            <ol>Pa : 1rem</ol>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li><strong>Logo | Button :</strong>
+                            <ol><a href="#button">Voir Button</a></ol>
+                            <ol><a href="#logo">Voir Logo</a></ol>
+                        </li>
+                        <li><strong>Color (Hex) :</strong>
+                            <ol>#511201</ol>
+                            <ol>#AD160F</ol>
+                            <ol>#F0F2F2</ol>
+                            <ol> #F8E8E8</ol>
+                            <ol>#F2E5BD</ol>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <!-- Logo -->
+            ANCHOR PLACEMENT
+
+            <h2 id="logo" style="width: 100%; text-align:center;">Logotype<br>
+                <p> - Veuillez survoler les élèments de la page -</p> &#129171;
+            </h2>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="WhiteBloc logo_row">
+                <img class="logo" src="assets\Kit_UX_UI\color\grape512x512-1.png" alt="logo grappe de raisin - logo grappe wine red-light" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="4500">
+                <img class="logo" src="assets\Kit_UX_UI\color\grape512x512-2.png" alt="logo grappe de raisin - logo grappe wine red-dark" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="4500">
+                <img class="logo" src="assets\Kit_UX_UI\color\grape512x512-5.png" alt="logo grappe de raisin - logo grappe wine camel" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="4500">
+                <img class="logo" src="assets\Kit_UX_UI\color\grape512x512-3.png" alt="logo grappe de raisin - logo grappe wine white" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="4500">
+                <img class="logo" src="assets\Kit_UX_UI\color\grape512x512-4.png" alt="logo grappe de raisin - logo grappe wine grey" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="4500">
+            </div>
+
+            <!-- Button -->
+            <h2 style="width: 100%; text-align:center;"> Liquid Button<br>
+                <p>- Cliquer sur l'image pour voir l'animation -</p> &#129171;
+            </h2>
+            <a data-aos="fade-up" data-aos-anchor-placement="top-bottom" target="_blank" href="https://lenny-vazeille.github.io/liquid_button/">
+                <div id="button" class="WhiteBloc logo_row">
+                    <img src="assets\Kit_UX_UI\button_liquid.jpg" alt="logo grappe de raisin - logo grappe wine red">
+                </div>
+            </a>
+        </section>
+
     </div>
 
     <!-- Footer -->
     <footer>
-        <ul>Projet APP Mobile + API - Charte graphique :
+        <ul>
+            <p>Projet APP Mobile | API - Dossier Conception :</p>
             <li>Développé par</li>
-            <li style="border-right:unset;">Lenny Vazeille</li>
+            <li>Lenny Vazeille&nbsp;</li>
+            <li>Sofiane Wattiez</li>
+            <li style="border-right: none;">Morgan Levetti</li>
         </ul>
     </footer>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
