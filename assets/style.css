@@ -49,6 +49,17 @@ body {
     box-sizing: border-box;
 }
 
+.container {
+    margin: 0 auto;
+    padding: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 
 /****************** CONTENT PAGE *****************/
 
@@ -166,9 +177,27 @@ section {
     justify-content: center;
     justify-items: center;
     align-items: flex-start;
+    padding: 50px;
+    align-content: center;
+    margin: 250px 5px 0 5px;
+    width: 97vw;
+    height: 100vh;
+    transition: all 1s ease-in 300ms;
+    -webkit-transition: all 1s ease-in 300ms;
+    -moz-transition: all 1s ease-in 300ms;
+    -ms-transition: all 1s ease-in 300ms;
+    -o-transition: all 1s ease-in 300ms;
+}
+
+body>div>section:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: flex-start;
+    flex-direction: column !important;
     padding: 20px;
     align-content: center;
-    margin: 250px 5px;
+    margin: 250px 5px 150px 5px;
     width: 97vw;
     height: 100vh;
     transition: all 1s ease-in 300ms;
@@ -182,7 +211,7 @@ section {
 /* Hover Arrow => Affichage Bloc info */
 
 header:hover::before {
-    content: 'Problématique : Développer une application de partage des connaissances - Pour les amateurs d\'oenologie, les producteur ou simple curieux ';
+    content: 'Problématique : Développer une application de partage des connaissances - Pour les amateurs d\'œnologie, les producteur ou simple curieux ';
     width: 456px;
     text-align: justify;
     display: flex;
@@ -236,24 +265,22 @@ section::after {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-content: center;
+    align-content: flex-start;
     justify-items: center;
     align-items: flex-start;
     padding: 10px 30px;
-    opacity: 0.5;
+    opacity: 0.20 !important;
     flex-wrap: wrap;
-    filter: blur(100px);
     transition: all 1s ease-in;
     -webkit-transition: all 1s ease-in;
     -moz-transition: all 1s ease-in;
     -ms-transition: all 1s ease-in;
     -o-transition: all 1s ease-in;
-    -webkit-filter: blur(100px);
 }
 
 .WhiteBloc:hover,
 .DarkBloc:hover {
-    opacity: 1;
+    opacity: 1!important;
     transition: All 30ms ease-in;
     filter: blur(0px);
     -webkit-filter: blur(0px);
@@ -312,6 +339,33 @@ p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+p.explain {
+    position: absolute;
+    top: 140px;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+/* link */
+
+body>div>section:nth-child(1)>div.DarkBloc>div>ul:nth-child(3)>li:nth-child(1)>ol:nth-child(3)>a,
+body>div>section:nth-child(1)>div.DarkBloc>div>ul:nth-child(3)>li:nth-child(1)>ol:nth-child(2)>a {
+    text-decoration: none;
+    color: #AD160F;
+    transition: all 30ms ease-in;
+    -webkit-transition: all 30ms ease-in;
+    -moz-transition: all 30ms ease-in;
+    -ms-transition: all 30ms ease-in;
+    -o-transition: all 30ms ease-in;
+}
+
+body>div>section:nth-child(1)>div.DarkBloc>div>ul:nth-child(3)>li:nth-child(1)>ol:nth-child(3)>a:hover,
+body>div>section:nth-child(1)>div.DarkBloc>div>ul:nth-child(3)>li:nth-child(1)>ol:nth-child(2)>a:hover {
+    font-weight: 700;
+}
+
 
 /* bolder */
 
@@ -355,6 +409,7 @@ p3 {
 
 img {
     padding: 20px 0;
+    width: 80%;
 }
 
 .Info {
@@ -364,6 +419,7 @@ img {
     justify-items: center;
     align-items: center;
     align-content: center;
+    width: 100%;
 }
 
 .Info>ul {
@@ -374,6 +430,7 @@ img {
     align-items: flex-start;
     align-content: center;
     justify-content: center;
+    width: 116%;
 }
 
 .Info>ul>li {
@@ -385,11 +442,14 @@ img {
     list-style: none;
     border-left: 1px solid #ad160f;
     border-right: unset;
-    margin-left: 179px;
+    margin-left: 80px;
 }
 
 
-/***   Logo ***/
+/***   Logo + Button (Liquid) ***/
+
+
+/* logo  */
 
 .logo_row {
     display: flex;
@@ -398,10 +458,10 @@ img {
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
-    margin: 50px 0;
+    margin: 50px 0 200px 0;
 }
 
-.DarkBloc>img {
+.logo_row>.logo {
     width: 150px;
     height: 150px;
     padding: 20px;
@@ -409,10 +469,21 @@ img {
 }
 
 
+/* liquid button  */
+
+body>div>section:nth-child(2)>a {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+
 /*** Footer  ***/
 
 footer {
-    background-color: #00000054;
+    background-color: #000000;
     width: 100%;
     height: 40px;
     padding: 15px;
@@ -436,7 +507,7 @@ ul {
 }
 
 li {
-    color: #F2E5BD;
+    color: #f2e5bd46;
     padding: 0 10px;
     font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -485,5 +556,11 @@ li {
         -ms-transition: all 1s ease-in;
         -o-transition: all 1s ease-in;
         -webkit-filter: blur(0px);
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    body>div>section:nth-child(2) {
+        margin-top: 750px;
     }
 }
